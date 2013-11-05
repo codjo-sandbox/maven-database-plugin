@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<document>
+    <properties>
+        <title>Changes</title>
+    </properties>
+    <body>
+        <release version="1.00.00.00-c" date="2003-06-17" in_production="true"/>
+        <release version="1.00.00.00-b" date="2003-06-03"/>
+        <release version="1.00.00.00-a" date="2003-05-19" description="Version initiale"/>
+
+        <release version="3.00.00.00-a" date="2005-05-11" description="Evolution Groupes Emetteurs" in_production="true"/>
+
+        <release version="2.04.00.00-a" date="2005-01-01" description="Stabilité des affectations" in_production="true"/>
+        <release version="2.03.00.00-a" date="2004-11-04" description="Ajout IBOXX et gestion profil"/>
+        <release version="2.02.00.00-a" date="2004-07-09" description="Finalisation chantier FININFO"/>
+        <release version="2.01.00.00-a" date="2004-04-02" description="Evolution"/>
+        <release version="2.00.00.00-b" date="2004-01-05" description="Correction"/>
+        <release version="2.00.00.00-a" date="2003-12-16" description="Evolution"/>
+    </body>
+</document>

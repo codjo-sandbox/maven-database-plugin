@@ -1,0 +1,29 @@
+ ------
+ Welcome to maven-database-plugin!
+ ------
+ AGF Development Team
+ ------
+ 09 Août 2006
+ ------
+
+Welcome to maven-database-plugin!
+
+ Ce plugin permet d'effectuer différentes tâches pour manipuler la base de données.
+
+ Fichiers necessaires pour le bon fonctionnement :
+
+changes.fml
+
+ - Emplacement (ex. de Gabi) : GABI/src/changes/changes.fml
+
+version.properties
+
+ - Emplacement (ex. de Gabi) : F:\GABI\PRODUCTION\sql\version.properties
+
+ - Ce fichier contient le tag de la version de l'application déployée en production
+
+livraison-sql.txt
+
+ - Emplacement (ex. de Gabi) : GABI/application/sql/livraison-sql.txt
+
+ - Ce fichier contient une liste de commandes sql pour jouer le delta lors d'une livraison

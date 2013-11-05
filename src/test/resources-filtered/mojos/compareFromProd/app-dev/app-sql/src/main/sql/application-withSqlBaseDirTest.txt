@@ -1,0 +1,2 @@
+table\VU_REF_PERSON.sql
+table\VU_REF_GROUP.sql

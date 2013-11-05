@@ -1,0 +1,8 @@
+if not exists (select 1 from syscolumns where id=object_id('REF_GROUP') and name='ENABLED')
+begin
+	exec('alter table REF_GROUP add ENABLED char null')
+	print 'alter table REF_GROUP Champ ENABLED crée'
+end
+go
+
+    

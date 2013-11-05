@@ -1,0 +1,6 @@
+table\AP_GROUP_PERSON-alter-badly.tab
+table\VU_REF_PERSON.sql
+table\VU_REF_GROUP.sql
+procedure\sp_select_group.sql
+procedure\sp_select_person.sql
+procedure\sp_select_group_person.sql

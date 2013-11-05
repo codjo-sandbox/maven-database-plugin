@@ -1,0 +1,2 @@
+table\REF_GROUP-alter.tab
+table\VU_REF_PERSON.sql

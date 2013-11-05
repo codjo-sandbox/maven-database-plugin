@@ -1,0 +1,6 @@
+if exists (select 1 from syscolumns where id=object_id('AP_GROUP_PERSON') and name='TITLE')
+begin
+	exec('alter table AP_GROUP_PERSON drop TITLE')
+	print 'alter table AP_GROUP_PERSON Champ TITLE supprimé'
+end
+go

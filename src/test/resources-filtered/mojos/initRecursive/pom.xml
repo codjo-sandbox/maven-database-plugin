@@ -1,0 +1,31 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>toto</artifactId>
+    <groupId>toto</groupId>
+    <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <project implementation="net.codjo.maven.mojo.database.MavenProjectMock"/>
+                    <localRepository implementation="net.codjo.maven.mojo.database.ArtifactRepositoryMock"/>
+
+                    <sqlBaseDir>target/test-classes/mojos/initRecursive</sqlBaseDir>
+                    <projectDirectory>target/test-classes/mojos/initRecursive</projectDirectory>
+                    <procedureOrder>
+                        src/test/resources-filtered/mojos/initRecursive/procedure-order.txt
+                    </procedureOrder>
+
+                    <databaseServer>${databaseServer}</databaseServer>
+                    <databasePort>${databasePort}</databasePort>
+                    <databaseCatalog>${databaseCatalog}</databaseCatalog>
+                    <databaseBase>${databaseBase}</databaseBase>
+                    <databaseUser>${databaseUser}</databaseUser>
+                    <databasePassword>${databasePassword}</databasePassword>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,25 @@
+<project>
+    <artifactId>app-sql</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <versionInProduction>roses-2.00.00.00-h</versionInProduction>
+                    <releaseScriptsFile>target/test-classes/mojos/compareFromProd/app-dev/app-sql/src/main/sql/application-runDeltaTwice.txt
+                    </releaseScriptsFile>
+                    <sqlBaseDir>target/test-classes/mojos/compareFromProd/app-dev/app-sql/src/main/sql</sqlBaseDir>
+                    <sqlBaseDirGenerated>target/test-classes/mojos/compareFromProd/app-dev/app-sql/target</sqlBaseDirGenerated>
+                    <projectDirectory>target/test-classes/mojos/compareFromProd/app-dev/app-sql</projectDirectory>
+                    <databaseServer>${databaseServer}</databaseServer>
+                    <databasePort>${databasePort}</databasePort>
+                    <databaseCatalog>${databaseCatalog}</databaseCatalog>
+                    <databaseBase>${databaseBase}</databaseBase>
+                    <databaseUser>${databaseUser}</databaseUser>
+                    <databasePassword>${databasePassword}</databasePassword>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

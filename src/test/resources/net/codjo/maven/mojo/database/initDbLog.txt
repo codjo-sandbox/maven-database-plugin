@@ -1,0 +1,9 @@
+Fichier Introuvable.
+Table PM_ASSET_CLASS_STRUCTURE created
+Table PM_CLASSIFICATION_ORDER created
+Table PM_ASSET_CLASSIFICATION created
+Table PM_COLUMN_LABEL created
+Table PM_EXPRESSION created
+Msg 6549 : Table inexistante.
+Index PM_IMPORT_SETTINGS.X1_PM_IMPORT_SETTINGS cree
+Unable to open input file PM_IMPORT_SETTINGS.txt

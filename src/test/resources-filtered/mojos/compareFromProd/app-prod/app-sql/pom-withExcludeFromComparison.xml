@@ -1,0 +1,34 @@
+<project>
+    <artifactId>app-sql</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <versionInProduction>roses-2.00.00.00-h</versionInProduction>
+                    <releaseScriptsFile>target/test-classes/mojos/compareFromProd/app-dev/app-sql/src/main/sql/application-withExcludeFromComparison.txt</releaseScriptsFile>
+                    <sqlBaseDir>target/test-classes/mojos/compareFromProd/app-dev/app-sql/src/main/sql</sqlBaseDir>
+                    <sqlBaseDirGenerated>target/test-classes/mojos/compareFromProd/app-dev/app-sql/target</sqlBaseDirGenerated>
+                    <projectDirectory>target/test-classes/mojos/compareFromProd/app-dev/app-sql</projectDirectory>
+                    <excludeFromComparison>
+                        <tables>
+                            <table>REF_GROUP</table>
+                            <table>AP_GROUP.*</table>
+                        </tables>
+                        <procedures>
+                            <procedure>sp_select_group</procedure>
+                            <procedure>sp_select_group.*</procedure>
+                        </procedures>
+                    </excludeFromComparison>
+                    <databaseServer>${databaseServer}</databaseServer>
+                    <databasePort>${databasePort}</databasePort>
+                    <databaseCatalog>${databaseCatalog}</databaseCatalog>
+                    <databaseBase>${databaseBase}</databaseBase>
+                    <databaseUser>${databaseUser}</databaseUser>
+                    <databasePassword>${databasePassword}</databasePassword>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

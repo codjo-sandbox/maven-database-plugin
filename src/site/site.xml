@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="maven-database-plugin">
+
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-default-skin</artifactId>
+    </skin>
+
+    <publishDate format="dd MMM yyyy"/>
+
+    <body>
+        <menu name="Overview" inherit="top">
+            <item name="Presentation" href="/about.html"/>
+        </menu>
+
+        <menu ref="modules"/>
+
+        <menu ref="reports"/>
+
+    </body>
+</project>

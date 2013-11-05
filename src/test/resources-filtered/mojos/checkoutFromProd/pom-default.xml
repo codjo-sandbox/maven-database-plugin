@@ -1,0 +1,15 @@
+<project>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <checkoutDirectory>target/checkout</checkoutDirectory>
+                    <versionInProduction>roses-2.00.00.00-h</versionInProduction>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

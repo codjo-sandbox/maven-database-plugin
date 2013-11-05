@@ -1,0 +1,25 @@
+<project>
+    <name>POM For test</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <project implementation="net.codjo.maven.mojo.database.MavenProjectMock"/>
+                    <projectFile>pom.xml</projectFile>
+
+                    <databaseServer>databaseServer</databaseServer>
+                    <databasePort>databasePort</databasePort>
+                    <databaseBase>databaseBase</databaseBase>
+                    <databaseCatalog>databaseCatalog</databaseCatalog>
+
+                    <expectedDatabaseServer>databaseServer</expectedDatabaseServer>
+                    <expectedDatabasePort>databasePort</expectedDatabasePort>
+                    <expectedDatabaseBase>databaseBase</expectedDatabaseBase>
+                    <expectedDatabaseCatalog>databaseCatalog</expectedDatabaseCatalog>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+    | POM Relationships
+    -->
+    <artifactId>toto</artifactId>
+    <groupId>toto</groupId>
+    <version>1.0</version>
+    <dependencies>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <project implementation="net.codjo.maven.mojo.database.MavenProjectMock"/>
+                    <localRepository implementation="net.codjo.maven.mojo.database.ArtifactRepositoryMock"/>
+
+                    <sqlBaseDir>target/test-classes/mojos/initFilteredSql</sqlBaseDir>
+                    <sqlBaseDirTest>${project.basedir}/target/test-classes/mojos/initFilteredSql/test
+                    </sqlBaseDirTest>
+                    <projectDirectory>target/test-classes/mojos/initFilteredSql</projectDirectory>
+                    <databaseServer>${databaseServer}</databaseServer>
+                    <databasePort>${databasePort}</databasePort>
+                    <databaseCatalog>${databaseCatalog}</databaseCatalog>
+                    <databaseBase>${databaseBase}</databaseBase>
+                    <databaseUser>${databaseUser}</databaseUser>
+                    <databasePassword>${databasePassword}</databasePassword>
+                    <procedureOrder>
+                        src/test/resources-filtered/mojos/initFilteredSql/procedure-order.txt
+                    </procedureOrder>
+                    <filters>
+                        <filter>
+                            <token>PLOUM_PLOUM</token>
+                            <value>FILTERED</value>
+                        </filter>
+                        <filter>
+                            <token>COL_1</token>
+                            <value>NEW_COL</value>
+                        </filter>
+                    </filters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <!--
+     | Project Information
+     -->
+
+    <name>Plugin Database</name>
+    <url>http://maven.apache.org</url>
+
+    <!--
+     | Build Settings
+     -->
+
+    <packaging>maven-plugin</packaging>
+
+</project>

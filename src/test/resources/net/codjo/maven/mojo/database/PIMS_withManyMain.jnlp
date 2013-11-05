@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jnlp href="PIMS.jnlp" spec="1.0+" codebase="file://\\ntsrv01\apps\PIMS\PRODUCTION\Client">
+    <information>
+        <title>PIMS PRODUCTION</title>
+        <vendor>CODJO</vendor>
+        <homepage href="PIMS.html"/>
+        <icon href="../../images/PIMS.JPG"/>
+        <description>Application cliente du serveur PIMS.</description>
+        <description kind="short">Interface IHM de PIMS</description>
+    </information>
+
+    <security>
+        <all-permissions/>
+    </security>
+
+    <resources>
+        <j2se version="1.3" maximum-heap-size="32m" initial-heap-size="32m"></j2se>
+
+        <jar main="true" href="ClientAPP-3.02.00.00-a.jar"></jar>
+        <jar main="true" href="agf-trigger-gui-2.03.jar"></jar>
+
+        <jar href="agf-trigger-common-2.03.jar"></jar>
+
+        <property name="server.default.url" value="server.url.production"/>
+        <property name="server.url.recette" value="Production, t3://p_web_app4:27005"/>
+    </resources>
+
+    <application-desc main-class="com.agf.pims.gui.PimsWindow"/>
+</jnlp>

@@ -1,0 +1,16 @@
+<project>
+    <name>POM For test</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <project implementation="net.codjo.maven.mojo.database.MavenProjectMock"/>
+                    <projectDirectory>target/test-classes/mojos/initFromProd</projectDirectory>
+                    <checkoutDirectory>target/test-classes/mojos/initFromProd/checkout</checkoutDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,8 @@
+if not exists (select 1 from syscolumns where id=object_id('REF_PERSON') and name='EMAIL')
+begin
+	exec('alter table REF_PERSON add EMAIL varchar(50) null')
+	print 'alter table REF_PERSON Champ EMAIL crée'
+end
+go
+
+    

@@ -1,0 +1,26 @@
+<project>
+    <name>POM For test</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.codjo.maven.mojo</groupId>
+                <artifactId>maven-database-plugin</artifactId>
+                <configuration>
+                    <project implementation="net.codjo.maven.mojo.database.MavenProjectMock"/>
+                    <projectDirectory>target/test-classes/mojos/initFromProd</projectDirectory>
+                    <procedureOrder>src/test/resources-filtered/mojos/init/procedure-order.txt</procedureOrder>
+                    <sqlBaseDir>target/test-classes/mojos/initFromProd</sqlBaseDir>
+                    <sqlBaseDirTest>${project.basedir}/target/test-classes/mojos/initFromProd/test
+                    </sqlBaseDirTest>
+                    <checkoutDirectory>target/test-classes/mojos/initFromProd/checkout</checkoutDirectory>
+                    <fullInitFromProd>true</fullInitFromProd>
+
+                    <databaseServer>databaseServer</databaseServer>
+                    <databasePort>databasePort</databasePort>
+                    <databaseBase>databaseBase</databaseBase>
+                    <databaseCatalog>databaseCatalog</databaseCatalog>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

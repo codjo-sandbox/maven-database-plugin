@@ -1,0 +1,3 @@
+exec('alter table REF_GROUP add ENABLED char null')
+print 'alter table REF_GROUP Champ ENABLED crée'
+go
