@@ -137,9 +137,9 @@
      -->
 
     <scm>
-        <connection>scm:git:https://github.com/codjo/database.git</connection>
-        <developerConnection>scm:git:https://github.com/codjo/database.git</developerConnection>
-        <url>https://github.com/codjo/database</url>
+        <connection>scm:git:https://github.com/codjo/maven-database-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/codjo/maven-database-plugin.git</developerConnection>
+        <url>https://github.com/codjo/maven-database-plugin</url>
     </scm>
 
 </project>
