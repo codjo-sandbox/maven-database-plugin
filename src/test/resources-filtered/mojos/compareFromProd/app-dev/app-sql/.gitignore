@@ -1,0 +1,9 @@
+*.ipr
+*.iws
+*.iml
+.svn
+APDescription.txt
+MTPs-*.*
+pom.xml.*
+release.properties
+.DS_Store
