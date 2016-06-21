@@ -8,11 +8,11 @@
     <parent>
         <groupId>net.codjo.pom</groupId>
         <artifactId>codjo-pom-plugin</artifactId>
-        <version>SNAPSHOT</version>
+        <version>3.1-SNAPSHOT</version>
     </parent>
     <groupId>net.codjo.maven.mojo</groupId>
     <artifactId>maven-database-plugin</artifactId>
-    <version>1.59-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>net.codjo.maven</groupId>
